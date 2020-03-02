@@ -30,7 +30,7 @@ public class CreateBucket {
 	static AmazonS3 s3 = null;
 	static {
 		// final SecretKey secretKey = KeyGenerator.getInstance("AES").generateKey();
-		s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_WEST_2)
+		s3 = AmazonS3ClientBuilder.standard().withRegion("") //Region goes here
 				// .withCryptoConfiguration(new
 				// CryptoConfiguration(CryptoMode.AuthenticatedEncryption))
 				// .withEncryptionMaterials(new StaticEncryptionMaterialsProvider(new
